@@ -12,4 +12,14 @@ router.get("/profile/:id", (req, res) => {
   });
 });
 
+
+
+
+
+router.delete("/:id", (req, res) => {
+  Fruit.destroy({ where: { id: req.params.id } }).then(() => {
+    res.redirect("/users");
+  });
+});
+
 module.exports = router;
