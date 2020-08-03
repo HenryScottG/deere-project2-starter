@@ -9,7 +9,8 @@
 
   <body>
     <h1>Welcome to <%= user.name %>'s Profile Page</h1>
-
+    <strong><a href="/player/new">Create a new Player</a></strong>
+    <br>
     <form action="/users/profile/<%=user.id%>?_method=PUT" method="POST">
       Name: <input type="text" name="name" value="<%=user.name%>" /><br />
       <br />
@@ -18,17 +19,15 @@
       <br />
       <br />
       Password:
-      <input type="text" name="password" value="<%=user.password%>" /><br />
+      <input type="password" name="password" value="<%=user.password%>" /><br />
       <br />
       <input type="submit" value="Edit Profile" />
-      <form action="/users/<%= user.id %>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete User" />
-        <a href="/auth/logout">Log Out</a>
-      </form>
     </form>
     <br />
-    
-
+    <form action="/users/<%= user.id %>?_method=DELETE" method="POST">
+      <input type="submit" value="Delete User" />
+    </form>
+    <a href="/auth/logout">Log Out</a>
     <br /><br />
     <a href="/">Back to Homepage</a>
   </body>
