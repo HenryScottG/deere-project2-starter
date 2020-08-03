@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players profile</title>
+</head>
+<body>
+    <form action="/players/profile/<%=player.id%>?_method=PUT" method="POST">
+        <!-- <label for="playerId">Team:</label>
+        <select name="playerId"> -->
+          <!-- <option value="none">--Pick A Team--</option> -->
+          <% for ( let i = 0; i < players.length; i++ ) { %>
+          <option value="<%=players[i].id%>" <%= players[i].id===player.teamId? "selected":'' %>>
+            <%=players[i].name%>
+          </option>
+          <% } %>
+        </select> 
+</body>
+</html>

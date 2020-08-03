@@ -4,7 +4,7 @@ const router = express.Router();
 // add access to the fruit and user model tables
 const UserModel = require("../models").User;
 const PlayerModel = require('../models').Player;
-const TeamModel=require('../models').Team;
+// const TeamModel=require('../models').Team;
 
 
 
@@ -26,7 +26,7 @@ router.put('/profile/:id', (req, res)=>{
 
 
 
-// delete user
+// WORKING delete user
 router.delete("/:id", (req, res) => {
   UserModel.destroy({ where: { id: req.params.id } }).then(() => {
     res.redirect("/users");
