@@ -2,18 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Create New Player </title>
         <link rel="stylesheet" href="/app.css">
     </head>
     <body>
-        <h1>New Player page</h1>
+        <h1>Create A New Player</h1>
         
             <!--  NOTE: action will be the route, method will be the HTTP verb-->
         <form action="/player" method="POST">
         <strong>Name:</strong> <input type="text" name="name" />
-            <br></br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="" value="Create Pokemon"/>
+        <label for="TeamId">Team:</label><select name="teamId"><option value="none">--Pick A Team--</option><br>
+
         </form>
         <br></br>
+        <input type="submit" name="" value="Create Player"/>
     </body>
+    
 </html>

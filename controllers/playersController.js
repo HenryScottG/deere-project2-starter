@@ -25,7 +25,10 @@ router.get("/", (req, res) => {
     });
   });
 
-
+  // New player
+  router.get('/new', (req,res)=> {
+    res.render('players/new.ejs');
+});
 
 // SHOW ROUTE - GET ONE 
 router.get("/:id", (req, res) => {
