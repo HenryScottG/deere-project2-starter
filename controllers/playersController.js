@@ -6,11 +6,6 @@ const PlayerModel = require('../models').Player;
 const UserModel = require("../models").User;
 // const TeamModel=require('../models').Team;
 
-// New player
-// router.get('/', (req,res)=> {
-//     res.render('players/index.ejs');
-// });
-
 
 // signup route
 router.post('/', (req, res)=>{
@@ -31,6 +26,7 @@ router.get("/", (req, res) => {
   });
 
 
+
 // SHOW ROUTE - GET ONE 
 router.get("/:id", (req, res) => {
    PlayerModel.findByPk(req.params.id, {
@@ -41,25 +37,35 @@ router.get("/:id", (req, res) => {
         },
       ],
     }).then((player) => {
-      res.render("show.ejs", {
+      res.render("players/show.ejs", {
         player: player,
       });
     });
   });
+
+  // edit player
+router.get('/:id/edit', function(req, res){
+    PlayerModel.findByPk(req.params.id).then(playerToEdit=>{
+        res.render("edit.ejs", {
+            player: playerToEdit
+        });
+    });
+});
 //  put the updated profile information on the profile page
-router.put('/profile/:id', (req, res)=>{
-    PlayerModel.update(req.body, {
+router.put('/:id', (req, res) => { //:index is the index of our pokemon array that we want to change
+	PlayerModel.update(req.body, {
         where: { id: req.params.id },
         returning: true,
         plain: true,
       }).then((updatedPlayer) => {
-        res.redirect(`/players/profile/${req.params.id}`);
+        res.redirect('/players');
+        // /profile/${req.params.id}`
 });
 });
 
 //delete one player
 router.delete("/:id", (req, res) => {
-    Player.destroy({ where: { id: req.params.id } }).then(() => {
+    PlayerModel.destroy({ where: { id: req.params.id } }).then(() => {
       res.redirect("/players");
     });
   });

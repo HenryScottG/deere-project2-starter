@@ -9,7 +9,7 @@
 
   <body>
     <h1>Welcome to <%= user.name %>'s Profile Page</h1>
-    <strong><a href="/player/new">Create a new Player</a></strong>
+    
     <br>
     <form action="/users/profile/<%=user.id%>?_method=PUT" method="POST">
       Name: <input type="text" name="name" value="<%=user.name%>" /><br />

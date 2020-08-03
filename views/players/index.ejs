@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Players Index</title>
     <link rel="stylesheet" href="/app.css" />
 </head>
 <body>
     <h1>Players Index</h1>
+    <strong><a href="/player/new">Create a new Player</a></strong>
+
     <ul>
         <% for(let i=0; i<player.length; i++) { %>
         <li>
@@ -15,7 +17,10 @@
             
             <form action="/players/<%=player[i].id %>?_method=DELETE" method="POST">
                 <input type="submit" value="DELETE Player" />
+                <a href="/players/<%=player[i].id%>/edit">Edit</a> 
             </form>
+            <br>
+
         </li>
         <% } %>
     </ul>
