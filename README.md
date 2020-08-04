@@ -35,8 +35,8 @@ You have the following routes available.
 
 <br>
 Approach Used
-Used Wireframing to visualize the page layout. 
-![](./Project Hockey.png)
+Wireframing to visualize the page layout. 
+![](./Hockey.png)
 
 ## Additional Resources
 
