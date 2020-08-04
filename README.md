@@ -34,6 +34,9 @@ You have the following routes available.
 - GET `localhost:3000/profile/:id`
 
 <br>
+Approach Used
+Used Wireframing to visualize the page layout. 
+![](./Project Hockey.png)
 
 ## Additional Resources
 
