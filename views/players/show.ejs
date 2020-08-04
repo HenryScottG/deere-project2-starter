@@ -3,16 +3,16 @@
     <head>
         <meta charset="utf-8">
         <!-- <title></title> -->
-        <title>Edit Player Profile</title>
+        <title>Show Player Profile</title>
         <link rel="stylesheet" href="/app.css">
     </head>
     <body>
-        <h1>Edit Your Player</h1>
-       
-        <form action="/players/<%=player.id%>?_method=PUT" method="POST">
-		<!--  NOTE: the form is pre-populated with values for the server-->
-		<strong>Name:</strong> <input type="text" name="name" value="<%=player.name%>"/><br/>
+        <h1>Show Your Player</h1>
 
+    <form action="/players/<%=player.id%>?_method=PUT" method="POST">
+	
+		<strong>Name:</strong> <input type="text" name="name" value="<%=player.name%>"/><br/>
     <input type="submit" name="" value="Submit Changes"/>
-    
-        </form>
+    </form>
+</body>
+</html>
