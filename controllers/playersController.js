@@ -3,8 +3,8 @@ const router = express.Router();
 
 // add access to the fruit and user model tables
 const PlayerModel = require('../models').Player;
-const UserModel = require("../models").User;
-// const TeamModel=require('../models').Team;
+// const UserModel = require("../models").User;
+const TeamModel=require('../models').Team;
 
 
 // signup route
@@ -18,7 +18,7 @@ router.post('/', (req, res)=>{
 // get all the players
 router.get("/", (req, res) => {
     PlayerModel.findAll().then((players) => {
-        console.log(players);
+        // console.log(players);
       res.render("players/index.ejs", {
         player: players,
       });
@@ -27,19 +27,18 @@ router.get("/", (req, res) => {
 
   // New player
   router.get('/new', (req,res)=> {
-    res.render('players/new.ejs');
+      TeamModel.findAll().then(allTeams =>{
+        res.render('players/new.ejs', {
+           allTeams
+        });
+      })
+    
 });
 
 // SHOW ROUTE - GET ONE 
-router.get("/:id", (req, res) => {
-   PlayerModel.findByPk(req.params.id, {
-      include: [
-        {
-          model: UserModel,
-          attributes: ["name"],
-        },
-      ],
-    }).then((player) => {
+router.get("/profile/:id", (req, res) => {
+   PlayerModel.findByPk(req.params.id 
+    ).then((player) => {
       res.render("players/show.ejs", {
         player: player,
       });

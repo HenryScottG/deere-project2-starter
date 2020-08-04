@@ -9,13 +9,19 @@
         <h1>Create A New Player</h1>
         
             <!--  NOTE: action will be the route, method will be the HTTP verb-->
-        <form action="/player" method="POST">
+        <form action="/players" method="POST">
         <strong>Name:</strong> <input type="text" name="name" />
-        <label for="TeamId">Team:</label><select name="teamId"><option value="none">--Pick A Team--</option><br>
-
+        <label for="TeamId">Team:</label>
+        <select name="teamId">
+            <option value="null">--Pick A Team--</option><br>
+<% allTeams.forEach(team=>{%>
+<option value="<%=team.id%>"><%=team.name%> </option>
+    <% })%>
+        </select>    
+        <input type="submit" name="" value="Create Player"/>    
         </form>
         <br></br>
-        <input type="submit" name="" value="Create Player"/>
+        
     </body>
     
 </html>

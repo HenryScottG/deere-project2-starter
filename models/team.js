@@ -1,6 +1,6 @@
 'use strict';
 const {
-  Model
+  Model, INTEGER
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Team extends Model {
@@ -10,14 +10,15 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Team.hasMany(models.Player, { foreignKey: 'teamId' });
     }
   };
   Team.init({
     name: DataTypes.STRING,
     games: DataTypes.INTEGER,
     win: DataTypes.INTEGER,
-    loss: DataTypes.INTEGER
+    loss: DataTypes.INTEGER,
+ 
   }, {
     sequelize,
     modelName: 'Team',
