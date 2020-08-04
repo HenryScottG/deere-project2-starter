@@ -35,8 +35,38 @@ You have the following routes available.
 
 <br>
 Approach Used
-Wireframing to visualize the page layout. 
+Wireframing to visualize the layout of the pages. 
 ![](./Hockey.png)
+
+
+User Stories
+ * As a user, I should be able to have the option to log in or sign up to the site.
+ * As a user, I should be able to see my profile and edit it. 
+ * As a user, I should be able to see a list of the players.
+ * As a user, I should be able to click a button to edit a player.
+ * As a user, I should be able to click a button to add a player.
+ * As a user, I should be able to delete a player.
+ * As a user, I should be able to click a drop down to select the team for a new player.
+ * As a user, I should be able have a log out button.
+ * As a user, I should be able to click a link on some pages to get to the players index.
+ * As a user, I should be able to see players profile.
+ * As a user, I should be able to see the data that was seeded in pgAdmin.
+ * As a user, I should be able to see the data change in pgAdmin.
+
+Tecnologies Used
+* A working full-stack application using Node.js, Postgres, Express and EJS.
+* Adhere to the MVC file structure: Models, Views, Controllers.
+* At least one model with all 7 RESTful routes and full CRUD.
+* At least 2 models that are associated in some way (e.g. one-to-many, many-to-many, etc).
+* GitHub
+
+Struggles
+* Routing for both users and players.
+* Page layout using css.
+* Associations with multiple tables. 
+* Seeding the tables with available data from a hockey resourse.
+* Time management - where something is broke, work on something else until assistance is available. 
+
 
 ## Additional Resources
 
