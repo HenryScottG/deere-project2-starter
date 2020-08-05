@@ -6,7 +6,16 @@
         <title>Show Player Profile</title>
         <link rel="stylesheet" href="/app.css">
     </head>
+    <div class="topnav">
+      <div class="topnav-right">
+        <a href="gilsonscott@johndeere.com">Report Issues</a>
+        <a href="https://generalassemb.ly/"target="_blank">Contact Us</a>
+        <a href="#search">Search</a>
+        <a href="/auth/logoff">Log Off</a>
+      </div>
+    </div>
     <body>
+      <br>
         <h1>Show Your Player</h1>
     <form action="/players/<%=player.id%>?_method=PUT" method="POST">
 		<strong>Name:</strong> <input type="text" name="name" value="<%=player.name%>"/><br/>

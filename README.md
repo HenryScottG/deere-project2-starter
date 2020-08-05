@@ -69,6 +69,16 @@ Struggles
 * Seeding the tables with available data from a hockey resourse.
 * Time management - where something is broke, work on something else until assistance is available. 
 
+Future Enhancements
+* Update the Search feature to find players.
+* Update the Contact Us have a form.
+* Better CSS layout.
+* Authentication.
+* Update the profile page to display all information.
+
+Lessons Learned
+* Work on one route at a time.
+* Better understanding for how table integrate.
 
 ## Additional Resources
 
