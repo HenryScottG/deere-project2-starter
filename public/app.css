@@ -79,6 +79,7 @@ a {
     background-color: #ddd;
     color: black;
   }
+  /* display buttons to have color */
   input[type=button]
 {
   background-color: whitesmoke; 
@@ -95,6 +96,7 @@ input[type=submit]:hover
 {
   background-color: lightblue;
 }
+/* added id in html for creating a new player to have a larger button */
 #new{
     width: 10em;  height: 2em;
     font-size: 17px;
