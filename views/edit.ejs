@@ -7,15 +7,21 @@
         <link rel="stylesheet" href="/app.css">
     </head>
     <body>
+        <div class="topnav">
+            <div class="topnav-right">
+              <a href="/auth/logoff">Log Off</a>
+            </div>
+          </div>
         <h1>Edit Your Player</h1>
         <form action="/players/<%=player.id%>?_method=PUT" method="POST">
 		<!--  NOTE: the form is pre-populated with values for the server-->
 		<strong>Name:</strong> <input type="text" name="name" value="<%=player.name%>"/><br/>
-
-        <input type="submit" name="" value="Submit Changes"/>
         <br></br>
+        <input type="submit" name="" value="Submit Changes"/> <input type="button" value="Go back" onclick="history.back()">
+        <br></br>
+       
         </form>
         <a href="/players">To Players Index</a>
-        <a href="/auth/logout">Log Out</a>
+
     </body>
 </html>

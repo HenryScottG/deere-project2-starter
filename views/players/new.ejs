@@ -6,6 +6,11 @@
         <link rel="stylesheet" href="/app.css">
     </head>
     <body>
+        <div class="topnav">
+            <div class="topnav-right">
+              <a href="/auth/logoff">Log Off</a>
+            </div>
+          </div>
         <h1>Create A New Player</h1>
         
             <!--  NOTE: action will be the route, method will be the HTTP verb-->
@@ -20,7 +25,8 @@
         </select> 
         <br></br>   
         <input type="submit" name="" value="Create Player"/>    
-        </form>
+        <input type="button" value="Go back!" onclick="history.back()">    
+    </form>
         <br></br>
         
     </body>

@@ -10,12 +10,13 @@
         <h1>Show Your Player</h1>
     <form action="/players/<%=player.id%>?_method=PUT" method="POST">
 		<strong>Name:</strong> <input type="text" name="name" value="<%=player.name%>"/><br/>
-    <input type="submit" name="" value="Submit Changes"/>
+    <br></br>
+    <input type="submit" name="" value="Submit Changes"/><input type="button" value="Go back" onclick="history.back()">
     
   </form>
     
 <br>
   </br>
-    <a href="/players">To Players Index</a>
+
 </body>
 </html>

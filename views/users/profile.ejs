@@ -8,6 +8,11 @@
   </head>
 
   <body>
+    <div class="topnav">
+      <div class="topnav-right">
+        <a href="/auth/logoff">Log Off</a>
+      </div>
+    </div>
     <h1>Welcome to <%= user.name %>'s Profile Page</h1>
     
     <br>
@@ -27,10 +32,6 @@
     <form action="/users/<%= user.id %>?_method=DELETE" method="POST">
       <input type="submit" value="Delete User" />
     </form>
-    <br></br>
-    <a href="/auth/logout">Log Out</a>
-    <br /><br />
-    <a href="/">Back to Homepage</a>
     <br></br>
     <a href="/players">To Players Index</a>
   </body>
