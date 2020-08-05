@@ -79,3 +79,23 @@ a {
     background-color: #ddd;
     color: black;
   }
+  input[type=button]
+{
+  background-color: whitesmoke; 
+}
+input[type=button]:hover
+{
+  background-color: lightblue;
+}
+input[type=submit]
+{
+  background-color: whitesmoke;
+}
+input[type=submit]:hover
+{
+  background-color: lightblue;
+}
+#new{
+    width: 10em;  height: 2em;
+    font-size: 17px;
+  }

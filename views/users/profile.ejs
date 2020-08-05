@@ -27,12 +27,14 @@
       <input type="password" name="password" value="<%=user.password%>" /><br />
       <br />
       <input type="submit" value="Edit Profile" />
+    </form><br>
+    <form>
+      <input type="button" onclick="window.location.href='/players';" value="Players Index" />
     </form>
     <br />
     <form action="/users/<%= user.id %>?_method=DELETE" method="POST">
       <input type="submit" value="Delete User" />
     </form>
     <br></br>
-    <a href="/players">To Players Index</a>
   </body>
 </html>
