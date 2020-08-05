@@ -37,6 +37,8 @@ You have the following routes available.
 Approach Used
 Wireframing to visualize the layout of the pages. 
 ![](./Hockey.png)
+
+Project location
 https://github.com/HenryScottG/deere-project2-starter
 
 User Stories
