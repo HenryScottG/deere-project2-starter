@@ -44,7 +44,15 @@ a {
   background-color: #4CAF50;
   color: white;
   }
-  
+  /* search box */
+  .topnav-right input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
   /* Right-aligned section inside the top navigation */
   .topnav-right {
   float: right;
