@@ -9,6 +9,7 @@
 
   <body>
     <div class="topnav">
+      <a class="active" href="#profile">Your Profile</a>
       <div class="topnav-right">
         <a href="https://generalassemb.ly/"target="_blank">Contact Us</a>
         <a href="gilsonscott@johndeere.com">Report Issues</a>
@@ -17,7 +18,7 @@
       </div>
     </div>
     <br>
-    <h1>Welcome to <%= user.name %>'s Profile Page</h1>
+    <h1>Welcome to <%= user.name %>'s Profile</h1>
     
     <br>
     <form action="/users/profile/<%=user.id%>?_method=PUT" method="POST">

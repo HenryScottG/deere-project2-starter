@@ -116,4 +116,18 @@ h2 {
     color: Black;
     text-align: left; 
  }
- 
+ /* Container holding the image and the text */
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: white;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
