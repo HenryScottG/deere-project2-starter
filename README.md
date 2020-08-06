@@ -1,15 +1,6 @@
 ## Deere Project 2 Starter Code
 
-## Set Up
 
-1. Fork and clone this repo
-1. `cd` into the folder and run `npm install`
-1. In the root of your app, `touch .env` and add:
-
-   ```bash
-   PORT=3000
-   JWT_SECRET=pancakes
-   ```
 
 1. Check out your `config/config.json` file. You'll need to create a database called `project2_development`
 1. Sequelize is included in the app. You have a `User` model. Run `db:migrate` to create the `Users` table in your database.
@@ -40,6 +31,8 @@ Wireframing to visualize the layout of the pages.
 
 Project location
 https://github.com/HenryScottG/deere-project2-starter
+https://hockey-project2.herokuapp.com/
+
 
 User Stories
  * As a user, I should be able to have the option to log in or sign up to the site.
@@ -51,9 +44,10 @@ User Stories
  * As a user, I should be able to click a drop down to select the team for a new player.
  * As a user, I should be able have a log out button.
  * As a user, I should be able to click a link on some pages to get to the players index.
- * As a user, I should be able to see players profile.
- * As a user, I should be able to see the data that was seeded in pgAdmin.
- * As a user, I should be able to see the data change in pgAdmin.
+ * As a user, I should be able to see the players profile.
+ * As a user, I should be able to see the seeded data in pgAdmin.
+ * As a user, I should be able to see the data update in pgAdmin.
+
 
 Tecnologies Used
 * A working full-stack application using Node.js, Postgres, Express and EJS.
@@ -61,6 +55,8 @@ Tecnologies Used
 * At least one model with all 7 RESTful routes and full CRUD.
 * At least 2 models that are associated in some way (e.g. one-to-many, many-to-many, etc).
 * GitHub
+* Heroku
+
 
 Struggles
 * Routing for both users and players.
@@ -70,7 +66,7 @@ Struggles
 * Time management - where something is broke, work on something else until assistance is available. 
 
 Future Enhancements
-* Update the Search feature to find players.
+* Update the Search feature to find players on the index page.
 * Update the Contact Us have a form.
 * Better CSS layout.
 * Authentication.
@@ -78,7 +74,8 @@ Future Enhancements
 
 Lessons Learned
 * Work on one route at a time.
-* Better understanding for how table integrate.
+* Better understanding for how tables integrate.
+
 
 ## Additional Resources
 

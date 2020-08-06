@@ -112,3 +112,7 @@ input[type=submit]:hover
     width: 10em;  height: 2em;
     font-size: 17px;
   }
+h2 {
+    color: Black;
+    text-align: left; 
+ }
