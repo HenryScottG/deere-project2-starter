@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/app.css">
     </head>
     <div class="topnav">
+      <a class="active" href="#home">Show A Player</a>
       <div class="topnav-right">
         <a href="gilsonscott@johndeere.com">Report Issues</a>
         <a href="https://generalassemb.ly/"target="_blank">Contact Us</a>
@@ -16,11 +17,14 @@
     </div>
     <body>
       <br>
-        <h1>Show Your Player</h1>
+      <br></br>
+      
+      <br>
+        <!-- <h1>Show Your Player</h1> -->
     <form action="/players/<%=player.id%>?_method=PUT" method="POST">
 		<strong>Name:</strong> <input type="text" name="name" value="<%=player.name%>"/><br/>
-    <br></br>
-    <input type="submit" name="" value="Submit Changes"/><input type="button" value="Go back" onclick="history.back()">
+    <br>
+    <input type="submit" name="" value="Submit Changes"/>&nbsp;&nbsp;<input type="button" value="Go back" onclick="history.back()">
     
   </form>
     

@@ -93,7 +93,8 @@ a {
   /* display buttons to have color */
 input[type=button]
 {
-  background-color: whitesmoke; 
+  background-color: whitesmoke;
+  box-shadow: 5px 3px #888888; 
 }
 input[type=button]:hover
 {
@@ -102,6 +103,7 @@ input[type=button]:hover
 input[type=submit]
 {
   background-color: whitesmoke;
+  box-shadow: 5px 3px #888888; 
 }
 input[type=submit]:hover
 {
