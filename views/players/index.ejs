@@ -28,7 +28,7 @@
     <form>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" onclick="window.location.href='/players/new';" id='new' value="Create A New Player" />
     </form>
-    <ul>
+    <ol>
         <% for(let i=0; i<player.length; i++) { %>
         <li>
             <a href="/players/profile/<%=player[i].id%>"> <%=player[i].name%> </a>
@@ -44,7 +44,7 @@
 
         </li>
         <% } %>
-    </ul>
+    </ol>
 
 </body>
 </html>

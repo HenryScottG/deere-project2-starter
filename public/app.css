@@ -58,8 +58,8 @@ a {
   float: right;
   }
   img {
-    padding: auto;
-    width: auto;
+    /* padding: auto; */
+    width: 63%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -91,7 +91,7 @@ a {
     color: black;
   }
   /* display buttons to have color */
-  input[type=button]
+input[type=button]
 {
   background-color: whitesmoke; 
 }
@@ -124,10 +124,15 @@ h2 {
   /* Bottom right text */
   .text-block {
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    bottom: 0px;
+    right: 0px;
     background-color: white;
     color: black;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0px;
+    padding-right: 40px;
+  }
+  ol {
+    columns: 5;
+    -webkit-columns: 5;
+    -moz-columns: 5;
   }
